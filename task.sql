@@ -7,7 +7,7 @@ CREATE TABLE Countries (
     PRIMARY KEY (ID)
 ) ENGINE=InnoDB;
 
-CREATE TABLE GeoIP (
+CREATE TABLE GeoIPCache (
     ID INT,
     IPRange VARCHAR(20),
     CountryID INT,
@@ -24,7 +24,7 @@ CREATE TABLE ProductDescription (
     PRIMARY KEY (ID)
 ) ENGINE=MyISAM;
 
-CREATE TABLE logs (
+CREATE TABLE Logs (
     ID INT,
     Timestamp DATE,
     Message VARCHAR(100),
